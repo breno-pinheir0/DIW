@@ -2,13 +2,7 @@ body{ /*Retiramos qualquer margem e borda do body*/
     margin: 0px;
     padding: 0px;
 }
-h1{
-    font-size: 0.4cm;
-}
-p{
-    font-size: 0.3cm;
-    color: black;
-}
-img{/*Serve para todas as imagens do código*/
+.destaque{
     display: block;
+    width: 100%;
 }
