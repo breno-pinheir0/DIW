@@ -1,6 +1,7 @@
 body{ /*Retiramos qualquer margem e borda do body*/
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif; /*Fonte recomendada*/
 }
 
 .destaque{
