@@ -2,7 +2,7 @@ body{ /*Retiramos qualquer margem e borda do body*/
     font-family: Arial, Helvetica, sans-serif; /*Fonte recomendada*/
     background-image: url(https://picsum.photos/720);/*Escolhendo uma imagem de fundo*/
     background-repeat: no-repeat;/*Não deixando a imagem de fundo repetir*/
-    background-size: 100% 100%;
+    background-size: 100% 100%;/*Esticando a imagem para ocupar toda a tela*/
 }
 
 .destaque{
@@ -15,12 +15,15 @@ div{
     width: 70%;
     background-color: white; /*Cor de fundo*/
     margin: 15px auto; /*0 para largura e auto para altura*/
-    opacity: 40%;/*Reduzindo a opacidade do elemento, deixando-o mais transparente*/
+    opacity: 50%;/*Reduzindo a opacidade do elemento, deixando-o mais transparente*/
     clear: both;/*Limpando a flutuação dos elementos*/
     overflow: auto;
+    padding: 8px;
     
 }
 
 div p img{
-    float: left;    
+    float: left;
+    margin: 8px;    
+    width: 80px;
 }
