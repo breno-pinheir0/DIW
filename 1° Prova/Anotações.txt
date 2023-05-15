@@ -1,0 +1,111 @@
+- A Web é considerada a teoa mundial de informações.
+- Na Web 2.0, ela era uma plataforma para negócios e aplicações com modelos leves de programação, usando tecnologias como RSS, REST e JSON.
+- O World Wide Web Consortium (W3C) é uma comunidade internacional que mantém e evolui os padrões da Web, como o Design e Aplicações Web, Arquitetura da Web, Tecnologia XML, Web Semântica, entre outros.
+- Cliente Web é um programa ou aplicação específica, na maioria das vezes um Navegador ou Browser, também conhecido como agente de usuário que envia requisições, via protocolo HTTP(S) a uma outra aplicação, o Servidor Web, através de uma rede de computadores como a Internet.
+- O Serivodr Web é um programa que recene uma requisição HTTP(S). interpreta a URL e, em seguida, envia a resposta ao Cliente Web com o recurso solicitado (arquivo HTML, CSS, JavaScript, imagens, vídeos, folhas de estilo) por meio da rede.
+- A Internet é uma rede mundial de computadores baseada no protocolo TCP/IP, onde todo computador conectado é denominado host (hospedeiro) e possui um identificador endereço IP no padrão A.B.C.D (ex: 200.20.15.22).
+
+- O Protocolo HTTP é a forma como clientes e servidores se comunicam na rede. As requisições e respostas obedecem aos padrões estabelecidos pelo protocolo HTTP.
+- A Requisição HTTP é um pacote de dados enviados pela rede através do Cliente Web para o Servidor Web e identifica o recurso solicitado. 
+- A Resposta HTTP é formada por pacotes de dados enviados pelo Servidor Web para o Cliente Web com os recursos solicitados.
+- A URI(Uniform Resource Identifier), é um padrão para o endereçamento de recursos disponíveis na rede que engloba os conceitos de URL (Uniform Resource Locator) e URN(Uniform Resource Name)
+- A URL (Uniform Resource Locator), um padrão de URI, é o texto que vai na parte superior do browser e que indica qual recurso o usuário deseja acessar (Ex: https://www.google.com). Ela serve para referenciar um recurso e sua localização.
+
+- Estrutura de um URL: " esquema://user:pass@host:porta/caminho?query#fragmento "
+o Esquema: identifica a forma de interação entre um cliente e um servidor, como por exemplo http, https, ftp, entre outros.
+o User:pass: informações de usuário
+o Host: nome ou número IP onde se encontra a aplicação servidor.
+o Porta: identifica a porta TCP/I`P associada ao servidor. A porta padrão do HTTP (80), pode ser omitida.
+o Caminho: indica o local exato onde o recurso se encontra.
+o Query: dados não hierárquicos, detalhando a consulta, normalmente, sob a forma de pares nome e valor.
+o Fragmento: identifica uma seção no recurso.
+
+- URN(Uniform Resource Name) é um padrão de URI que identifica um recurso específico (Namespace Specific String) pelo nome em um namespace(Namespace IDentifier)
+Ex.: esquema:namespace_identifier:namespace_specific_string (urn:isbn:978-1-491-91866-1) 
+
+- HTML (HyperText Markup Language) é a linguagem de marcação, baseada em tags, utilizada para produção de documentos ou páginas Web, no formato de hipertextos, que são interpretados pelos Navegadores.
+- Hipertextos são documentos que utilizam hiperlinks para outros documentos relacionados,
+
+- Os elementos HTML são a estrutura básica de um documento HTML, marcados por meio de tags delimitadas pelos símbolos < e >(Ex: <body> [conteúdo] </body>).
+-> Elementos HTML podem se apresentar em quatro formatos:
+o Elementos com elementos filhos: <html> <head> </head> <body> </body> </html>
+o Elementos com texto: <title> Puc Minas Web Site </title>
+o Elementos vazios: <meta name="author" content="Rommel"> ou <br>
+o Elementos de conteúdo misto (texto e elementos filhos): <p> Documento <span lang="en">Web</span> </p>
+
+- Atributos podem ser incluídos em elementos HTML. Um atributo não se repete em um elemento. São definidos pelo par nome="valor". (Ex.: <input disbled name="Nome_Usuario" [disabled e name são atributos]).
+- O Cabeçalho é a primeira parte do arquivo HTML, representada pela tag <head>, que inlcui informações sobre o documento (metadados), referências a scipts, folhas de estilo (CSS) que complementam o documento.
+- O Corpo é a segunda parte do arquivo HTML, representada pela tag <body>, que inclui todo o conteúdo da página exibida ao usuário pelo Navegador. É composto por textos, links, imagens, vídeos, tabelas e formulários.
+- Os elementos de metadados trazem informações sobre a página:
+o Title: Define o título do documento
+o Style: Define códigos de formatação no padrão CSS
+o Link: Definem ligações com outros arquivos, como CSS, scripts, etc.
+o Meta: As meta tags trazem informações sobre o documento taisa como codificação de caracteres, descrição, palavras-chaves, autor, etc.
+
+-> Meta Tag Charset: especifica a codificação de caracteres utilizada no documento HTML (Ex.: <meta charset="UTF-8">)
+
+-> Meta tag http-equiv: são equivalentes aos cabeçalhos da resposta HTTP e podem ser:
+o content-type: Descreve o tipo de conteúdo do corpo da página (Ex: <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>)
+o expires: Define quando o documento deve ser considerado expirado(Ex: <meta http-equiv="expires" content="Mon, 22 jul 2006 11:12:01 GMT"/>)
+o refresh: Define um intervalo de tempo para atualização do documento. Utilizado para recarga de tempos em tempos, ou para redirecionamento de páginas(Ex: <meta http-equiv="refresh" content="15;url=http://www.site.com"/>)
+- Também orientam o navegador sobre como processar a página:
+o public: Os dados da página podem ser armazenados de forma compartilhada, isto é, será utilizado por diferentes usuários de um mesmo browser.
+o private: É o contrário de public, o cache é armazenado para um específico usuário.
+o no-cache: A página não é armazenada em Cache
+o no-store: É feito um cache temporário, a página não é arquivada
+
+-> Meta tag Name: permitem definir palavras-cahve associadas ao documento com o objetivo de indexá-lo. Esta informação é útilizada por máquinas de busca como o Google e o Bing.(Ex: <meta name="author" content="Rommel Carneiro" />)
+
+- Elementos Inline: Elementos que são dispostos em linha seguindo o fluxo padrão (Ex: <img>, <span>, <a>, <button>, <input>, <label>)
+- Elementos Block: Elementos que iniciam uma nova linha, não se dispondo a frente daquilo que o precede (Ex: <div>, <h1>...<h6>, <p>, <form>, <canvas>, <table>, <section>)
+->Elementos textuais:
+Elemento 		Propósito										Exemplo
+a 				Hiperlinks 							Visite a página de <a href="refs.html"> referências </a>
+em 				Ênfase estresse 					Devo dizer que eu <em> adoro </em> limonada.
+strong 			Importância 						Este chá é <strong> muito quente </strong> .
+small			 Comentários laterais	 			Essas uvas são transformadas em vinho. <small> O álcool é viciante. </small> 
+cite 			Citações de obras					O caso <cite> Hugo v. Danielle </cite> é relevante aqui.
+abbr 			Abreviaturas 						A empresa de pesquisas brasileiras é o <abbr title="Instituto Brasileiro e Geografia e Estatística">IBGE</abbr>.
+data 			Dados interpretados 				Livro disponíveis a partir de hoje: <data value="978-0987467423"> Aprendendo HTML</data> 
+			por computadores	
+datetime	 	Dado de data e hora 				Disponível a partir de <time datetime="2011-11-12"> 12 de novembro </time> !
+			interpretados por computador
+code 			Código de computador 				O programa <code> fruitdb </code> pode ser usado para rastrear a produção de frutos.
+i 				Voz alternative 					Limonada consiste principalmente de <i> Citrus limon </i> .
+b 				Palavras-chave 						Tome um <b> limão </b> e aperte com um <b> espremedor </b> .
+br 				Quebra de linha 					PUC Minas <br> Coração Eucarístico, CEP 3803525 <br> Belo Horizonte
+
+-> Elementos de Lista:
+- Lista ordenada: <ol> <li> primeiro item </li> 	<li> segundo item</> </ol>
+- Lista não ordenada: <ul> <li> primeiro item</li> 		<li> segundo item </li> </ul>
+- Definições: <dl> <dt> termo 01 </dt> <dd>definicao 01</dd> 	<dt> termo 02 </dt> <dd> definicao 02 </dd>
+
+-> Elemento de  Imagem: Imagens podem ser inseridas em uma página. (Ex: <img width="200" height="180" src="fish.jpg" alt="Peixe palhaço">)
+
+-> Elemento de tabela: <table border="1">
+							<caption>Título da Tabela</caption>
+							<thead>
+								<tr>
+									<th>Cabeçalho 1</th>
+									<th>Cabeçalho 2</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Lin 1 Col 1</td>
+									<td>Lin 1 Col 2</td>
+								</tr>
+								<tr>
+									<td>Lin 2 Col 1</td>
+									<td>Lin 2 Col 2</td>
+								</tr>
+							</tbody>
+						</table>
+
+-> Elementos de Layout: div, header, nav, section, article, aside, footer
+- Layouts estruturados com <div> não diferenciam um conteúdo de outro dentro da página (ex: <div id="header">[errado])
+- Páginas com layouts baseados em elementos semânticos estabelecem o significado de cada conteúdo e podem ser processadas por algoritmos, além de seres humanos (ex: <header>[correto])
+
+-> Elementos de Formulário:
+- A tag <form> delimita o formulário a ser criado. O atributo name (ou id) identificam o formulário no contexto da página. O atributo action indica qual a URL a ser disparada para processamento do formulário. O atributo method indica como o formulário será submetido via requisição HTTP. (Ex:<form name="form_login" action="do_login.html" method="POST"> </form>)
+- As tags input definem campos ou entradas de dados em um formulário. O atributo type identifica o tipo do campo (text, password, submit, etc.). O atributo name idenfitica o campo no formulário. O atributo value trata o valor contido no campo. (Ex: Usuário: <input type="text" name="usuario" value=""><br /> Senha: <input type="password" name="senha" value=""><br />) 

@@ -1,0 +1,79 @@
+- A WEB é um conjunto de informações disponibilizadas por Hiper Textos, e interligadas, se comportando como uma teia.
+- A WEB é uma aplicação na Internet.
+- O cliente da Web, geralmente, é o navegador sendo utilizado. Também é possível que outros aplicativos se comuniquem pelo canal HTTP para fazer trocas de informações, tornando o cliente da WEB.
+- O servidor Web é um programa que está rodando em um computador, que recebe a requisição enviada pelo cliente e interpreta ela para devolvê-lo para o cliente.
+- A Internet é como uma estrada na qual pode passar um carro(HTTP), uma bicicleta(E-mail). Ou seja, é por ela que diferentes clientes da Web (meios de transporte) recebem e devolvem informações. Ela permite a comunicação entre dois pontos por meio do protocolo TCP/IP, que determina o IP de cada máquina (É como o CPF de um equipamento na Internet).
+- DNS traduz nomes para números, ou seja, traduz o nome de um site para um número que será utilizado para fazer a conexão.
+- A URL é a identificação do recurso que está sendo solicitado, contendo o nome do servidor, nome do caminho onde está o recurso e informações adicionais.
+- URIs são identificadores de recursos. Elas podem ser URL (https://) ou URN, quando só tem o nome do recurso. Recurso e tudo que se pode encontrar na Internet.
+- A URL traz a localização do recurso, enquanto que a URN traz apenas o nome do mesmo.
+
+-> O HMTL e CSS
+
+- O HTML é a base para montar sites e aplicações da WEB;
+- O navegador faz uma requisição para o servidor e ele devolve os arquivos estáticos da página ou aplicação WEB.
+- O arquivo HTML comanda os arquivos estáticos e a forma como a página ou a aplicação será montada.
+- A primeira parte do HTML é o cabeçalho, delimitado pelas tags <head> e </head>. Todas as configurações da página estão na tag head.
+- A geunda parte do HTML é o corpo, delimitado pelas tags <body> e </body>. Tudo visível está presente na tag body.
+- Dentro dos elementos (tags) existem atributos. Ex.: <title>(elemento) Título da página (atributo) </title>.
+- Um elemento pode conter ID e Classe, sendo que esses dois podem ser referenciados diretamente no arquivo .css
+- Para referir à um ID, se usa # e para uma Classe se usa .
+- O navegador primeiro carrega o HTML, depois interpreta ele, para ai então ler e interpretar o CSS.
+
+-> Dinâmica da WEB
+- O primeiro passo é a solicitação do recurso a ser solicitado.
+- O navegador solicita o arquivo HTML que será interpretado (ex: index.html), e o servidor devolve o arquivo solicitado para que o mesmo seja interpretado. O mesmo ocorre com os arquivos que estão ligados no HTML (ex: arquivo CSS, JavaScript, etc.).
+
+-> Sintaxe da linguagem HTML
+- Os elementos HTML utilizam uma estrutura de tags, que geralmente possui uma tag de abertura e uma tag de fechamento.
+- As tags podem ser em maiúsculo ou minúsculo. O recomendado é escrever em minúsculo.
+- Dentro de tags podem existir outras tags.
+- Existem elementos vazios que não possuem conteúdo e nem tag de fechamento. Ex.: a tag <br> de quebra de linha.
+- Existem elementos com texto entre as tags de abertura e fechamento. Ex.: <html> <body> </body> </html>
+- Existem tags com texto e outras tags dentro. Ex.: <p> Documento <span lang = "en"> Web</spam> </p>
+- Os elementos podem possuir atributos, como nome, id, linguagem, etc. É recomendado utilizar aspas duplas no atributo que tenha valor.
+- Atributos podem ser vazios (sem valor).
+- Cada elemento possui um conjunto próprio de atributos.
+- O cabeçalho é a primeira parte do documento HTML que traz metadados (informações), referências a scripts, folhas de estilo (css) que complementam o documento.
+- O corpo (body) inclui o conteúdo que será exibido ao usuário.
+
+-> Elementos HTML
+- Existem elementos Inline, que são colocados em linha seguindo o fluxo padrão.(Ex.: <img>, <span>, <a>, <button>).
+- Existem elementos Block, que iniciam uma nova linha, não sendo colocado na frente do que o precede. (Ex.: <div>, <h1> ... <h6>, <p>).
+- Se tiver um elemento inline e, em seguida, um block, o block ocupará a linha seguinte, deixando o inline sozinho na linha de cima.
+o Elementos de metadados:
+-title: Define o título do documento;
+-style: Define os códigos de formatação no padrão CSS. Permite colocar códigos CSS direto na página HTML;
+-link: Definem ligações com outros arquivos. (Ex.: CSS, JavaScript, etc.);
+-meta: Trazem informações sobre o documento.(Ex.: Descrição, palavras-chave, autor, etc.);
+- A meta tag charset define a codificação de caracteres utilizada no documento HTML.
+---> A meta tag http-equiv são equivalentes aos cabeçalhos e podem ser:
+o content-type: Descreve o tipo de conteúdo do corpo da página
+o expires: Define quando o documento deve ser considerado expirado
+o refresh: Define um intervalo de tempo para a atualização do documento.
+o cache-control public: Os dados da página podem ser armazenados de forma compartilhada, ou seja, será utilizado por diferentes usuários de um mesmo browser.
+o cache-control private: Os dados são armazenados para um específico usuário. 
+o cache-control no-cache: A página não é armazenada em Cache.
+o cache-control no-store: É feito um cahce temporário, sendo que a página não é arquivada.
+---> Elementos textuais
+- Títulos(h1, h2,h3,h4,h5,h6)
+- Parágrafos(p)
+- Quebra de Linha (br)
+- Listas (ol (ordenada) | ul (não ordenada))
+- Links (<a>) fazem referência de uma página a outra.
+---> Elementos Tabulares
+- <tr> é a tag de uma linha da tabela (table row)
+- <th> é a tag do cabeçalho da tabela (table header)
+- <td> é a tag do conteúdo da tabela (table data)
+- <caption> é o título da tabela
+- <td rowspan = "numerodelinhas"> se agrupa linhas de acordo com o número colocado entre as aspas.
+
+-> Sintaxe da Linguagem CSS
+- Os comandos na linguagem CSS são compostas por um seletor e pelas declarações. 
+- O seletor especifica quais elementos vão receber as propriedades das declarações.
+
+-> Propriedades da Linguagem CSS
+- Valores e Unidades podem ser usados para referenciar comprimento, tamanho e cores.
+- Um tipo de tamanho absoluto não altera mesmo com a alteração de dispositivo que será utilizado para acessar o site.
+- Tipo de tamanho relativo altera de acordo com o tamanho da tela do dispositivo que está sendo utilizado para navegar no site.
+-

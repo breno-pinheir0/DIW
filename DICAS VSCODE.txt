@@ -1,0 +1,2 @@
+- no idex.html ao digitar um "!" o vscode completa com um código de "Hello World" completinho.
+- 
