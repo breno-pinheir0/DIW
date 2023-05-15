@@ -2,7 +2,26 @@ body{ /*Retiramos qualquer margem e borda do body*/
     margin: 0px;
     padding: 0px;
 }
+
 .destaque{
     display: block;
     width: 100%;
+}
+
+div{
+    display: inline-block; /* renderizado como um bloco mas em linha com os outros elementos*/
+    width: calc(33% - 16px);/*Colocando uma fórmula de 1/3 menos 8 pixels de cada lado(16 no total)*/
+    background-color: #DDD; /*Cor de fundo*/
+    vertical-align: top;/*Alinhando no topo cada elemento*/
+    margin: 8px; /*Margem de 8 pixels*/
+    padding: 10px;/*Adicionando espaço dentro de cada elemento*/
+    border: 1px solid #777; /*Colocando uma borda*/
+    border-radius: 10px;/*Deixando as bordas arredondadas*/
+    box-sizing: border-box;
+}
+
+div p img{
+    display: block;
+    width: 100%;/*Esticando a imagem para caber em cada elemento*/
+    margin-bottom: 10px;/*Margem na parte debaixo da imagem*/    
 }
