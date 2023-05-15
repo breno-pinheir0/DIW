@@ -1,0 +1,14 @@
+body{
+    color: #FF0000; /*red ou F00*/ 
+    font-size: 120%;/*Aumenta a fonte em 20% da fonte do navegador*/
+}
+h1{
+    font-size: 0.4cm;
+}
+p{
+    font-size: 0.3cm;
+    color: black;
+}
+img{/*Serve para todas as imagens do código*/
+    display: block;
+}
