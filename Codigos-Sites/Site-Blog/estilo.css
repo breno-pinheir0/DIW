@@ -1,0 +1,5 @@
+header {
+    height: 80px;
+    background: url("logo.png") no-repeat;
+    border-bottom: solid 1px lightgrey;
+}
