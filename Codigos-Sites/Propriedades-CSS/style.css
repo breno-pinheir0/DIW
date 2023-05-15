@@ -33,7 +33,7 @@ div p img{
 
 div p {
     font-size: 10pt; /*Definindo o tamanho da letra*/
-    line-height: 13pt;
+    line-height: 13pt;/*Definindo a altura da linha*/
 }
 
 h2{
