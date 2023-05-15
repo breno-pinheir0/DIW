@@ -1,0 +1,48 @@
+body{ /*Retiramos qualquer margem e borda do body*/
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif; /*Fonte recomendada*/
+    background-image: url(https://picsum.photos/720);/*Escolhendo uma imagem de fundo*/
+    background-repeat: no-repeat;/*Não deixando a imagem de fundo repetir*/
+    background-size: 100% 100%;
+}
+
+h1{
+    font-size: 250%;
+}
+
+.destaque{
+    display: block;
+    width: 100%;
+}
+
+div{
+    display: inline-block; /* renderizado como um bloco mas em linha com os outros elementos*/
+    width: calc(33% - 16px);/*Colocando uma fórmula de 1/3 menos 8 pixels de cada lado(16 no total)*/
+    background-color: white; /*Cor de fundo*/
+    vertical-align: top;/*Alinhando no topo cada elemento*/
+    margin: 8px; /*Margem de 8 pixels*/
+    padding: 10px;/*Adicionando espaço dentro de cada elemento*/
+    border: 1px solid #777; /*Colocando uma borda*/
+    border-radius: 10px;/*Deixando as bordas arredondadas*/
+    box-sizing: border-box;
+    opacity: 40%;/*Reduzindo a opacidade do elemento, deixando-o mais transparente*/
+}
+
+div p img{
+    display: block;
+    width: 100%;/*Esticando a imagem para caber em cada elemento*/
+    margin-bottom: 10px;/*Margem na parte debaixo da imagem*/  
+}
+
+div p {
+    font-size: 10pt; /*Definindo o tamanho da letra*/
+    line-height: 13pt;/*Definindo a altura da linha*/
+    text-align: justify;/*Ocupa toda o espaço de alinhamento*/
+}
+
+h2{
+    font-style: italic;/*Definindo o estilo da fonte*/
+    color: crimson;/*Alterando a cor da fonte*/
+    font-weight: lighter;/*Definindo a largura dos caracteres*/
+}
