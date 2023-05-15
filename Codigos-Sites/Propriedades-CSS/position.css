@@ -2,6 +2,7 @@ section{
     background-color: lightgray;
     margin: 20px;
     padding: 20px;
+    width: calc(100% - 400px);
 }
 
 div{
@@ -19,7 +20,10 @@ div{
 
 .d1a{
     background-color: yellow;
-    height: 70px;
+    position: fixed;/* sai do fluxo de renderização*/
+    width: 200px;
+    right: 0px;
+    overflow: auto;
 }
 
 .d1b{
@@ -33,6 +37,8 @@ div{
 
 .d3{
     background-color: lightgreen;
+    position: absolute;
+    top: 0px;/*Utiliza o ponto zero da página porque não tem o position: relative no section*/
 }
 
 .d4{
