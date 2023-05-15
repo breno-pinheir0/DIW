@@ -28,12 +28,13 @@ div{
 div p img{
     display: block;
     width: 100%;/*Esticando a imagem para caber em cada elemento*/
-    margin-bottom: 10px;/*Margem na parte debaixo da imagem*/    
+    margin-bottom: 10px;/*Margem na parte debaixo da imagem*/  
 }
 
 div p {
     font-size: 10pt; /*Definindo o tamanho da letra*/
     line-height: 13pt;/*Definindo a altura da linha*/
+    text-align: justify;/*Ocupa toda o espaço de alinhamento*/
 }
 
 h2{
