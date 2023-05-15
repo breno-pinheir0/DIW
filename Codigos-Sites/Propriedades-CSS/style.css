@@ -1,6 +1,6 @@
-body{
-    color: #FF0000; /*red ou F00*/ 
-    font-size: 120%;/*Aumenta a fonte em 20% da fonte do navegador*/
+body{ /*Retiramos qualquer margem e borda do body*/
+    margin: 0px;
+    padding: 0px;
 }
 h1{
     font-size: 0.4cm;
