@@ -84,4 +84,6 @@ o display:inline = O elemento será renderizado como um elemento inline, mesmo q
 o display:inline-block = O elemento será renderizado como um bloco, porém em linha com os demais elementos
 
 - A propriedade Box Model define o tamanho e comportamento de elementos HTML em geral.
-- 
+
+-> User Expirience Design
+-
