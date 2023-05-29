@@ -11,6 +11,7 @@ body, ul, li, p{
 
 .header a{
     text-decoration: none;
+    color: white;
 }
 
 h1{
@@ -38,4 +39,30 @@ img{
 
 .menu li{
     list-style: none;
+    margin-left: 10px;
 }
+
+.footer{
+    background-color: #727272;
+    display: flex;
+    flex-wrap: wrap;/*Quebra a Linha quando não há espaço*/
+    justify-content: space-between;/*criando espaço entre os componentes do header*/
+    align-items: center;
+    padding: 20px;
+    color: white;
+}
+
+/* CSS FlexBox 1 - Início*/
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex > div{
+    flex: 1 1; /*o primeiro 1 é caso a imagem possa aumentar (0 para não) e o segundo para caso a imagem possa reduzir (0 para não) e em terceiro vem o tamanho máximo do elemento */
+}
+
+/* CSS FlexBox 1 - Fim*/
