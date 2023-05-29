@@ -88,4 +88,7 @@ o display:inline-block = O elemento será renderizado como um bloco, porém em l
 -> User Experience Design
 - Usabilidade é uma característica de produtos interativos, que busca assegurar a facilidade de adaptação e de uso por parte dos usuários, enquanto se apresentam de maneira eficaz e agradáveis para o usuário.
 - O W3C define princípios de acessibilidade sendo elas 1) Ser perceptível, 2) Ser operável, 3) Ser compreensível, 4) Ser robusto
-- 
+- Aplicações nativas executam em um Sistema Operacional específico e possuem acesso total aos recursos dos dispositivos. São adquiridas por meio de download a partir das lojas virtuais de aplicativos e são instaladas diretamente no dipositivo móvel.
+- Aplicações Web executam em qualquer dispositivo móvel que possua um Navegador Web e possuem acesso apenas aos recursos disponíveis para o navegador, necessitando, em alguns casos, a confirmação do usuário. Não requerem download ou instalação e dependem essencialmente da conexão da Internet.
+- Aplicações Híbridas executam nos Sistemas Operacionais que possuams suporte a tecnologia empregada. São desenvolvidas com base em frameworks multi-plataforma e possui acesso parcial aos recursos dos dispositivos pelo framework utilizado. Aplicações Híbridas mesclam a parte nativa e a parte Web, sendo que a parte nativa deve ser descarregada das lojas de aplicativos e a parte Web é provida por um servidor na Internet e é acessada via Navegador inserido na parte nativa.
+- Responsive Web Design define um layout de site Web que vai se adaptando de acofdo com as condições do tamanho do dispositivo do usuário, priorizando os elementos essenciais e ocultando ou rearranjando os demais.
