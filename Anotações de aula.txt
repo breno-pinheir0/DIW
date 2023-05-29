@@ -87,3 +87,5 @@ o display:inline-block = O elemento será renderizado como um bloco, porém em l
 
 -> User Experience Design
 - Usabilidade é uma característica de produtos interativos, que busca assegurar a facilidade de adaptação e de uso por parte dos usuários, enquanto se apresentam de maneira eficaz e agradáveis para o usuário.
+- O W3C define princípios de acessibilidade sendo elas 1) Ser perceptível, 2) Ser operável, 3) Ser compreensível, 4) Ser robusto
+- 
