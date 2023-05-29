@@ -58,11 +58,12 @@ img{
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto; /* 0 de margem em cima e embaixo e automática nos lados*/
 }
 
 .flex > div{
-    flex: 1 1; /*o primeiro 1 é caso a imagem possa aumentar (0 para não) e o segundo para caso a imagem possa reduzir (0 para não) e em terceiro vem o tamanho máximo do elemento */
+    flex: 1 1 200px; /*o primeiro 1 é caso a imagem possa aumentar (0 para não) e o segundo para caso a imagem possa reduzir (0 para não) e em terceiro vem o tamanho máximo do elemento */
+    margin: 10px;
 }
 
 /* CSS FlexBox 1 - Fim*/
