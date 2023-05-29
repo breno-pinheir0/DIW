@@ -92,3 +92,16 @@ o display:inline-block = O elemento será renderizado como um bloco, porém em l
 - Aplicações Web executam em qualquer dispositivo móvel que possua um Navegador Web e possuem acesso apenas aos recursos disponíveis para o navegador, necessitando, em alguns casos, a confirmação do usuário. Não requerem download ou instalação e dependem essencialmente da conexão da Internet.
 - Aplicações Híbridas executam nos Sistemas Operacionais que possuams suporte a tecnologia empregada. São desenvolvidas com base em frameworks multi-plataforma e possui acesso parcial aos recursos dos dispositivos pelo framework utilizado. Aplicações Híbridas mesclam a parte nativa e a parte Web, sendo que a parte nativa deve ser descarregada das lojas de aplicativos e a parte Web é provida por um servidor na Internet e é acessada via Navegador inserido na parte nativa.
 - Responsive Web Design define um layout de site Web que vai se adaptando de acofdo com as condições do tamanho do dispositivo do usuário, priorizando os elementos essenciais e ocultando ou rearranjando os demais.
+
+-> CSS Viewport e Media Queries
+- Viewport é a área visível do usuário de uma página da Web. Ela varia de acordo com o dispositivo.
+- Como declarar uma viewport:
+<meta name="viewport" content="width=X, Y, Z">
+X = valor fixo em pixels ou device-width
+Y = initial-scale=1 // a viewport vai voltar pro zoom 1
+Z = minimum-scale / maximum-scale / user-scalable // é o zoom que o usuário pode dar (máximo ou mínimo)
+Ex: <meta name="viewport" content="width=device-width, initial-scale=1">
+-vw = Viewport Width (largura da viewport)
+-vh = Viewport Height (altura da viewport)
+-vmin = Altura ou largura mínima da Viewport
+-vmax = Altura ou largura máxima da Viewport
