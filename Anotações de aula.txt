@@ -110,3 +110,6 @@ Ex: <meta name="viewport" content="width=device-width, initial-scale=1">
 - Se utiliza o Flexbox quando se necessita de elementos de uma dimensão enquanto que o Grid é utilizado para elementos de duas dimensões.
 - Layout Flex é mais indicado para componentes em linhas ou colunas. Os espaçamentos entre os itens são calculados automaticamente e não é permitida a interação entre linhas e colunas.
 - Layout Grid é multidimensional. É indicado para layouts mais complexos onde os elementos tem interação entre linha e coluna.
+
+-> Bootstrap
+-
