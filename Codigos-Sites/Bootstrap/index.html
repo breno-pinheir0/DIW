@@ -40,43 +40,48 @@
         </div>
     </nav>
 
+
+
     <main class="mx-3"><!-- Colocando 3 de margem nas laterais (eixo x)-->
         <h2
             class="bg-primary bg-gradient text-light mt-1 px-2 border-top border-2 rounded border-primary-subtle text-end text-uppercase fw-bold fst-italic">
             Oi Bootstrap!</h2>
         <!--Adicionando uma cor de fundo azul gradiente, deixando as letras brancas, adicionando margem no topo com 1 de valor, adicionando padding nas laterais com 2 de valor, adicionando borda no topo com 2 de valor; deixando arredondada as bordas com o topo colorido com um azul mais claro, posicionando o texto no final (mais à esquerda) da tela, colocando as letras em maiúscula, em negrito e em itálico-->
-        
-        
-        <div class="container-fluid">
+
+
+        <div class="container-fluid my-3">
             <div class="row">
 
-                <div class="card col-4" >
+                <div class="card col-4">
                     <img src="https://picsum.photos/200" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Bariloche</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus
+                            doloremque excepturi, voluptatibus aut corrupti doloribus.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
-                  </div>
-                  <div class="card col-4" >
+                </div>
+                <div class="card col-4">
                     <img src="https://picsum.photos/201" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Londres</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque illo ipsum
+                            optio excepturi?</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
-                  </div>
-                  <div class="card col-4" >
+                </div>
+                <div class="card col-4">
                     <img src="https://picsum.photos/199" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Rio de Janeiro</h5>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam ad magnam
+                            labore error quas!</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
-                  </div>
-                  
+                </div>
+
             </div>
-            
+
         </div>
         <div class="container">
             <div class="row">
@@ -102,6 +107,64 @@
 
             </div>
         </div>
+
+        <div class="accordion my-4" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <p class="lh-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro perferendis totam
             animi, corporis voluptatibus qui rem. Rem, nobis est velit officia reiciendis provident aliquam nulla
             consectetur odit nemo sit.</p>
