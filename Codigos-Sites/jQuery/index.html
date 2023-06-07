@@ -50,17 +50,32 @@
             .css('font-family', 'monospace')
             .css('background-color', '#ddd');
 
+            $('.lista1').has('strong').addClass('marcado'); // os elementos que possuem "strong" recebem a class marcado
+
         }); 
 
            
 
     </script>
+
+    <style>
+        .marcado{
+            background-color: #ffaaaa;
+        }
+    </style>
 </head>
 <body>
     <p><button id="btn">Olá Mundo</button></p>
     <p><a href="http://jquery.com">jQuery</a></p>
     <h1>jQuery</h1>
     <p>Testes com jQuery</p>
+    <ul>
+        <li class="lista1">Item 1</li>
+        <li class="lista1"><strong>Item 2</strong></li>
+        <li class="lista1">Item 3</li>
+        <li class="lista1"><strong>Item 4</strong></li>
+        <li class="lista1">Item 5</li>
+    </ul>
     <ul id="lista">
         <li>Teste com seletores</li>
         <li>Teste de alteração de conteúdo</li>
