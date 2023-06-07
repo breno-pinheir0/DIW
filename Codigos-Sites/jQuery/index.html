@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,74 +8,80 @@
     <title>Demo</title>
     <script src="jquery-3.7.0.min.js"></script>
     <script>
-        $(document).ready(function(){ //$ equivale ao document.getElementById, uma forma de selecionar algo da página
-            $('a').click(function(evento){
+        $(document).ready(function () { //$ equivale ao document.getElementById, uma forma de selecionar algo da página
+            $('a').click(function (evento) {
                 alert('o link foi clicado');
                 evento.preventDefault(); //não permite o comportamento padrão do elemento
             });
             // O .ready funciona igual o .onclick
 
-            $('#btn').click(function(){ // usamos # para selecionar id
+            $('#btn').click(function () { // usamos # para selecionar id
                 console.log('Olá mundo!');
             });
 
             $('h1').css('background-color', '100px');
 
-            $('#mais1').click(function(){ // usamos # para selecionar id
+            $('#mais1').click(function () { // usamos # para selecionar id
                 let valor = parseInt($('#contador').text()); //extraindo o texto
                 $('#contador').text(valor + 1);
                 $('#menos1').prop('disabled', false);
             });
 
-            $('#menos1').click(function(){ 
+            $('#menos1').click(function () {
                 let valor = parseInt($('#contador').text())
                 valor--;
-                if(valor >= 0) $('#contador').text(valor);
-                if(valor == 0) $('#menos1').prop('disabled', true);
+                if (valor >= 0) $('#contador').text(valor);
+                if (valor == 0) $('#menos1').prop('disabled', true);
             });
 
-            $('#mais1elemento').click(function(){ 
+            $('#mais1elemento').click(function () {
                 $('#lista').append('<li>Item</li>');
             });
 
-            $('#teste').click(function(){ 
+            $('#teste').click(function () {
                 console.log('attr', $('#campo').attr('value')); // o valor do atributoo não é alterado
                 console.log('prop', $('#campo').prop('value')); // o valor da propriedade é alterado
             });
-            
+
             $('#caixa') // é possível fazer alterações em cascata no CSS
-            .html('<p>Olá</p>')
-            .css('width', '100px')
-            .css('height', '100px')
-            .css('border', 'thin solid black')
-            .css('font-family', 'monospace')
-            .css('background-color', '#ddd');
+                .html('<p>Olá</p>')
+                .css('width', '100px')
+                .css('height', '100px')
+                .css('border', 'thin solid black')
+                .css('font-family', 'monospace')
+                .css('background-color', '#ddd');
 
-            $('.lista1').has('strong').addClass('marcado'); // os elementos que possuem "strong" recebem a class marcado
+            $('.lista1').has('strong').addClass('marcado'); // os elementos que possuem o elemento filho "strong" recebem a class marcado
+            $('.lista1').filter('.teste').addClass('marcado2'); // os elementos que possuem "teste" na classe recebem a classe "marcado2"
 
-        }); 
+        });
 
-           
+
 
     </script>
 
     <style>
-        .marcado{
+        .marcado {
             background-color: #ffaaaa;
+        }
+
+        .marcado2 {
+            background-color: #aab1ff;
         }
     </style>
 </head>
+
 <body>
     <p><button id="btn">Olá Mundo</button></p>
     <p><a href="http://jquery.com">jQuery</a></p>
     <h1>jQuery</h1>
     <p>Testes com jQuery</p>
     <ul>
-        <li class="lista1">Item 1</li>
+        <li class="lista1 teste">Item 1</li>
         <li class="lista1"><strong>Item 2</strong></li>
-        <li class="lista1">Item 3</li>
+        <li class="lista1 teste">Item 3</li>
         <li class="lista1"><strong>Item 4</strong></li>
-        <li class="lista1">Item 5</li>
+        <li class="lista1 teste">Item 5</li>
     </ul>
     <ul id="lista">
         <li>Teste com seletores</li>
@@ -98,7 +105,8 @@
     </p>
 
     <div id="caixa">
-        
+
     </div>
 </body>
+
 </html>
