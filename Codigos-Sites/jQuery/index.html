@@ -6,8 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
     <script src="jquery-3.7.0.min.js"></script>
+    <script>
+        $(document).ready(function(){ //$ equivale ao document.getElementById, uma forma de selecionar algo da página
+            $('a').click(function(evento){
+                alert('o link foi clicado');
+                evento.preventDefault(); //não permite o comportamento padrão do elemento
+            });
+            // O .ready funciona igual o .onclick
+
+            $('#btn').click(function(){ // usamos # para selecionar id
+                console.log('Olá mundo!');
+            });
+
+            $('h1').css('background-color', '#ffcccc');
+
+        }); 
+
+           
+
+    </script>
 </head>
 <body>
+    <p><button id="btn">Olá Mundo</button></p>
     <p><a href="http://jquery.com">jQuery</a></p>
+    <h1>jQuery</h1>
+    <p>Testes com jQuery</p>
+    <ul>
+        <li>Teste com seletores</li>
+        <li>Teste de alteração de conteúdo</li>
+        <li>Testes de alteração de formatação</li>
+    </ul>
 </body>
 </html>
