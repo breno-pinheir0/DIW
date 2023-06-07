@@ -212,3 +212,27 @@ Veja esse exemplo de ativação e desativação de classe. Toda vez que um eleme
 $('#switch').click(function(){
   $(this).toggleClasse('ativado');
 });
+
+A função $() retorna um ou mais objetos que atendam ao critério do seletor. Podemos, em seguida, executar ações nesses objetos como a formatação por meio do método css() ou tratar um evento de clique por meio do método click().
+
+Antes da aplicação de uma ação, porém, é possível fazermos uma manipulação do conjunto de objetos retornados pela função. Por exemplo, podemos acrescentar outros objetos ao conjunto, por meio do método add(). Podemos também filtrar o conjunto de tal forma que atenda a um segundo seletor por meio do método filter().
+
+$('tr').filter(':even').css('background-color', 'lightgrey');
+A primeira forma de processamento do conjunto de objetos selecionados é a aplicação de filtros, como no exemplo acima. Existem vários métodos que permitem diferentes formas de filtragem dos objetos.
+
+filter()   — Reduz o conjunto para aqueles que atendem a um seletor ou passem em uma função de teste.
+is()   — Testa se pelo menos um objeto atende ao seletor e, nesse caso, retorna verdadeiro.
+not()   — Elimina do conjunto os elementos que se enquadrem no segundo seletor.
+has()   — Reduz o conjunto àquele elementos que possuam um determinado descendente. 
+eq()   — Reduz o conjunto para apenas um elemento do índice especificado.
+first()   — Reduz o conjunto ao seu primeiro elemento.
+last()   — Reduz o conjunto ao seu último elemento.
+slice()   — Reduz o conjunto a um subconjunto especificado por uma faixa de índices.
+map()   — Transforma o conjunto em um outro objeto contendo novos valores.
+Veja o exemplo abaixo. É uma operação simples, mas que combina várias ações. O objetivo é retornar a lista de IDs dos campos do tipo input. Em primeiro lugar, há uma seleção dos elementos por meio do seletor :input. Depois, usamos o método map() para aplicar uma função de transformação. Essa função retorna o valor do atributo id de cada elemento, criando um novo vetor de IDs. Finalmente, usamos o método get() para retornar o resultado como  um objeto JavaScript comum.
+
+// Retorna os ids dos elementos selecionados
+let listaIDs = $(':input').map(function() { 
+  return $(this).attr('id');
+}).get();
+Há muitos outros métodos para processamento ou filtragem do conjunto de elementos jQuery. Como a quantidade é muito grande, deixo aqui apenas uma referência para a documentação: https://api.jquery.com/category/traversing/
