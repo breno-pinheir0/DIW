@@ -63,3 +63,36 @@ AJAX - Funções para acesso assíncrono a dados e para manipulação de objetos
 Interface - Plugin para controles avançados de interface com o usuário;
 Extensibilidade - Base para a construção de plugins.
 jQuery é um assunto muito extenso. Assim, neste momento, veremos apenas as suas funcionalidades mais básicas.
+
+Toda a operação com jQuery começa com a seleção dos elementos aos quais serão feitas as leituras ou alterações.
+
+Os seletores não retornam os elementos HTML da página, mas um conjunto de objetos da própria jQuery que atendam aos critérios dos seletores. Esses critérios são os mesmos da CSS.
+
+Em seguida, as funções jQuery podem ser executadas sobre esses elementos. Veja este exemplo abaixo. Em primeiro lugar, criamos um botão na página:
+
+<button id="ola">Olá mundo.</button>
+Agora, podemos selecionar esse botão com a jQuery e associar uma função ao seu evento click.
+
+$('#ola').click( function() {
+  alert("Olá mundo!");
+});
+Mas é muito importante entender que não estamos associando uma função diretamente ao atributo onclick do botão. Estamos passando essa função para o método click de um objeto jQuery associado ao elemento de id ola. Percebe a volta que demos? Quem efetivamente cuidará da associação da função ao evento é o jQuery. Nós apenas pedimos que ele faça isso para a gente, por meio do método click.
+
+Antes de vermos quais são as operações que podemos fazer com os objetos jQuery, vamos ver algumas alternativas de seletores.
+
+
+PRINCIPAIS SELETORES
+Alguns seletores básicos de elementos são estes listados abaixo (exatamente como na CSS):
+
+*   — Seleciona todos os elementos
+tipo   — Seleciona os elementos do tipo especificado
+ancestral descendente   — Seleciona os elementos de um tipo que sejam descendentes de um elemento de outro tipo
+pai > filho   — Seleciona os elementos de um tipo que sejam filhos (diretos) de um elemento de outro tipo
+#id   — Seleciona um elemento com um determinado identificador
+.classe   — Seleciona os elementos de uma determinada classe
+tipo.classe   — Seleciona os elementos de um tipo e de uma dada classe
+anterior + tipo   — Seleciona os elementos de um tipo que são imediatamente precedidos por um irmão de outro tipo
+anterior ~ tipo   — Seleciona os elementos de um tipo que são precedidos (mesmo que não imediatamente) por um irmão de outro tipo
+e1, e2, e3   — Seleciona os elementos dos tipos especificados
+tipo:not(outroTipo)   — Seleciona os elementos de um tipo que não sejam de outro tipo 
+Também podemos selecionar de diversas outras formas, como por atributos, por pseudo-classes, por tipos de campos de formulário, pelos estados desses campo, por conteúdo ou pela ordem que aparecem em um conjunto. A lista é bem extensa e não vale a pena reproduzir tudo aqui. Assim, deixo a referência online para você: https://api.jquery.com/category/selectors/
