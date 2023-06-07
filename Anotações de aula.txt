@@ -1,3 +1,9 @@
+*O número de Versão é formado por MAJOR, MINOR, PATCH, significando:
+1. Versão Maior(MAJOR): quando fizer mudanças incompatíveis na API com versões anteriores
+2. Versão Menor(MINOR): quando adicionar funcionalidades mantendo compatibilidade
+3. Versão de Correção(PATCH): quando corrigir falhar mantendo compatibilidade
+
+
 - A WEB é um conjunto de informações disponibilizadas por Hiper Textos, e interligadas, se comportando como uma teia.
 - A WEB é uma aplicação na Internet.
 - O cliente da Web, geralmente, é o navegador sendo utilizado. Também é possível que outros aplicativos se comuniquem pelo canal HTTP para fazer trocas de informações, tornando o cliente da WEB.
@@ -113,3 +119,5 @@ Ex: <meta name="viewport" content="width=device-width, initial-scale=1">
 
 -> JavaScript
 - ECMAScript é uma especificação de linguagem, tendo o padrão do JavaScript
+
+
