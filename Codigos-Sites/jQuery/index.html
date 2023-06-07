@@ -20,6 +20,23 @@
 
             $('h1').css('background-color', '#ffcccc');
 
+            $('#mais1').click(function(){ // usamos # para selecionar id
+                let valor = parseInt($('#contador').text()); //extraindo o texto
+                $('#contador').text(valor + 1);
+                $('#menos1').prop('disabled', false);
+            });
+
+            $('#menos1').click(function(){ 
+                let valor = parseInt($('#contador').text())
+                valor--;
+                if(valor >= 0) $('#contador').text(valor);
+                if(valor == 0) $('#menos1').prop('disabled', true);
+            });
+
+            $('#mais1elemento').click(function(){ 
+                $('#lista').append('<li>Item</li>');
+            });
+
         }); 
 
            
@@ -31,10 +48,17 @@
     <p><a href="http://jquery.com">jQuery</a></p>
     <h1>jQuery</h1>
     <p>Testes com jQuery</p>
-    <ul>
+    <ul id="lista">
         <li>Teste com seletores</li>
         <li>Teste de alteração de conteúdo</li>
         <li>Testes de alteração de formatação</li>
     </ul>
+    <button id="mais1elemento">+1 elemento</button>
+
+    <p>Contador: <span id="contador"> 0</span></p>
+    <p>
+        <button id="mais1">+1</button>
+        <button id="menos1">-1</button>
+    </p>
 </body>
 </html>
