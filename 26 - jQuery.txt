@@ -188,3 +188,27 @@ empty()   — Remove o conteúdo do elemento selecionado.
 removeAttr(attr)   — Remove um atributo do elemento.
 removeProp(prop)   — Remove uma propriedade do elemento.
 Como você vê, há muitas possibilidades de alteração dos conteúdos e esses são apenas alguns dos recursos oferecidos pela jQuery.
+
+Da mesma forma que oferece uma série de elementos para manipulação da estrutura e do conteúdo do documento, jQuery oferece uma série de métodos aceleradores do trabalho com formatação. O principal desses métodos é o css(), que permite recuperar ou definir um propriedade (ou um conjunto de propriedades) para os elementos selecionados, como mostra este exemplo:
+
+var cor = $('#caixa').css('background-color');
+$('#caixa').css('background-color', 'yellow');
+$('#caixa'.css({
+  background-color: 'yellow',
+  border: 'thin solid black'
+});
+Há muitos métodos para controle da formatação e do posicionamento dos elementos, mas um conjunto bem interessante é aquele que permite a definição, inspeção e mudança de classes. Apesar de vários exemplos terem usado o método css(), é importante considerar que a inclusão de formatação em código JavaScript não é recomendada.
+
+É também importante lembrar que o W3C fez um grande esforço para separar o conteúdo da formatação. Assim, não faria muito sentido colocar essa formatação, agora, no código. Assim, recomenda-se mudar a formatação por meio dos ajustes feitos nas classes.
+
+Esses métodos de classes são:
+
+addClass()   — Adiciona uma classe ao elemento.
+hasClass()   — Testa se o elemento possui uma determinada classe.
+removeClass()   — Remove uma classe do elemento.
+toggleClass()   — Adiciona a classe se o elemento não a tiver ou retira a classe se o elemento já a tiver.
+Veja esse exemplo de ativação e desativação de classe. Toda vez que um elemento de id switch for clicado, será atribuída ou removida uma classe ativado a esse elemento. Neste ponto, observe o uso do seletor this. Esse é um seletor especial que faz referência ao próprio elemento selecionado.
+
+$('#switch').click(function(){
+  $(this).toggleClasse('ativado');
+});
