@@ -18,7 +18,7 @@
                 console.log('Olá mundo!');
             });
 
-            $('h1').css('background-color', '#ffcccc');
+            $('h1').css('background-color', '100px');
 
             $('#mais1').click(function(){ // usamos # para selecionar id
                 let valor = parseInt($('#contador').text()); //extraindo o texto
@@ -36,6 +36,19 @@
             $('#mais1elemento').click(function(){ 
                 $('#lista').append('<li>Item</li>');
             });
+
+            $('#teste').click(function(){ 
+                console.log('attr', $('#campo').attr('value')); // o valor do atributoo não é alterado
+                console.log('prop', $('#campo').prop('value')); // o valor da propriedade é alterado
+            });
+            
+            $('#caixa') // é possível fazer alterações em cascata no CSS
+            .html('<p>Olá</p>')
+            .css('width', '100px')
+            .css('height', '100px')
+            .css('border', 'thin solid black')
+            .css('font-family', 'monospace')
+            .css('background-color', '#ddd');
 
         }); 
 
@@ -60,5 +73,17 @@
         <button id="mais1">+1</button>
         <button id="menos1">-1</button>
     </p>
+
+    <p>
+        <label for="campo">Nome:</label>
+        <input type="text" id="campo" value="nome">
+    </p>
+    <p>
+        <button id="teste">Valores</button>
+    </p>
+
+    <div id="caixa">
+        
+    </div>
 </body>
 </html>
