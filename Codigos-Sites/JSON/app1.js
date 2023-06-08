@@ -25,16 +25,19 @@ function incluirContato(){
     let objDados = leDados();
 
     // Incluir um novo contato
-    let strnome = document.getElementById('campoNome').value;
+    let strNome = document.getElementById('campoNome').value;
     let strtelefone = document.getElementById('campoTelefone').value;
     let novoContato = {
-        nome: strnome,
+        nome: strNome,
         telefone: strtelefone
     };
     objDados.contatos.push(novoContato);
 
     // Salvar os dados no localStorage novamente
     salvaDados(objDados);
+
+    // Atualiza os dados dda Tela
+    imprimeDados();
 }
 
 function imprimeDados(){
@@ -51,4 +54,4 @@ function imprimeDados(){
 // Configura os botões
 
 document.getElementById('btnCarregaDados').addEventListener('click', imprimeDados);
-document.getElementById('btnIncluirDados').addEventListener('click', incluirContato);
+document.getElementById('btnIncluirContato').addEventListener('click', incluirContato);
