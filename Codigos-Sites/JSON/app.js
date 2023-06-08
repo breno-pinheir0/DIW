@@ -28,4 +28,29 @@ var Cadastro = [{
         "ano": 2019,
         "placa": "XWY-1368"
     }]
-}]
+}];
+
+function ExibirCadastro(){
+    var textoHTML = '';
+    for(let x = 0; x < Cadastro.length; x++){
+        textoHTML += `Pessoa: ${Cadastro[x].nome} <br>`;
+
+        if (Cadastro[x].veiculos.length > 0)
+            textoHTML += '<ul>';
+
+        for(let y = 0; y < Cadastro[x].veiculos.length; y++){
+            let marca = Cadastro[x].veiculos[y].marca;
+            let modelo = Cadastro[x].veiculos[y].modelo;
+            let ano = Cadastro[x].veiculos[y].ano;
+            let placa = Cadastro[x].veiculos[y].placa;
+            textoHTML += `<li>${marca} - ${modelo} - ${placa} - ${ano}</li>`;
+        }
+
+        if (Cadastro[x].veiculos.length > 0)
+            textoHTML +=    '</ul>';
+    }
+
+    var tela = document.getElementById('tela');
+    tela.innerHTML = textoHTML;
+    //alert(textoHTML);
+};
