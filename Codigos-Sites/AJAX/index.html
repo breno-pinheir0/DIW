@@ -2,7 +2,12 @@
 <html lang="en">
 <head>
     <script>
-        function success(){console.log(JSON.parse(this.responseText));}
+        function success(){
+            //console.log(JSON.parse(this.responseText));
+            let obj = JSON.parse(this.responseText);
+           let texto = `Nome: ${obj.name} \n Login: ${obj.login}\n Biografia: ${obj.bio}`;
+           document.getElementById('tela').innerHTML = texto;
+        }
         function error(err){console.log('Erro:', err);}
 
         var xhr = new XMLHttpRequest();
@@ -13,6 +18,8 @@
     </script>
 </head>
 <body>
-    
+    <div id="tela">
+
+    </div>
 </body>
 </html>
