@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pinheiro Imóveis</title>
+    <link rel="icon" href="Imagens/logo.png">
+    <script type="text/javascript" src="JS/main.js"></script>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <script src="https://kit.fontawesome.com/6686f870aa.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/Logo letras coloridas.png" alt="" width="69" height="50">
+                  </a>
+              <button class="navbar-toggler" style="color: #5271ff;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" ></span>
+                Menu
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active"  aria-current="page" href="index.html" style="color: #001da0; font-weight: 500;">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quem_somos.html" onmouseover="this.style.color='#0003C2'" onmouseout="this.style.color='#5271ff'" style="color: #5271ff;">Quem somos</a>
+                  </li>
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="parceiro.html" onmouseover="this.style.color='#0003C2'" onmouseout="this.style.color='#5271ff'" style="color: #5271ff;">Seja um Parceiro</a>
+                </li>
+
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="manutencao.html" onmouseover="this.style.color='#0003C2'" onmouseout="this.style.color='#5271ff'" style="color: #5271ff;">Contato</a>
+              </li>
+                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" onmouseover="this.style.color='#0003C2'" onmouseout="this.style.color='#5271ff'" style="color: #5271ff;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Outras Buscas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <p style="padding-left: 20px; color: gray;">Políticas do Site</p>
+                      <li><a class="dropdown-item" href="manutencao.html">Política de Privacidade e Cookies</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <p style="padding-left: 20px; color: gray;">Outros</p>
+                      <li><a class="dropdown-item" href="manutencao.html">Seja um Corretor</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <p style="padding-left: 20px; color: gray;">Aluguel e Venda</p>
+                      <li><a class="dropdown-item" href="manutencao.html">Imóveis à venda</a></li>
+                      
+                      <li><a class="dropdown-item" href="manutencao.html">Imóveis para alugar</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.herbetcorretordeimoveis.com.br/" style="font-size: larger; color: #5271ff;">SITE
+                      REFERÊNCIA</a> <!-- Site que estou usando para referência de design -->
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Digite algo..." aria-label="Search">
+                  <button class="btn btn-outline-success" onmouseover="this.style.color='#0428c4' " onmouseout="this.style.color='#5271ff'" style="background-color: #ffffff; color: #5271ff; border-color: #5271ff;" type="submit">Pesquisar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+
+        <!--  FORMULÁRIO DE PESQUISA RÁPIDA  -->
+
+  <div style="background-color: #5271ff; padding-bottom: 20px; padding-top: 10px;">
+    <form class="row g-3" style="margin-left: 10px;" >
+      
+        <div class="col-md-6">
+          
+          <label for="inputEmail4" class="form-label" style="color: white; font-weight: 500;">Onde?</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Digite uma rua, bairro ou cidade">
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label" style="color: white; font-weight: 500;">Qual tipo?</label>
+          <select id="inputState" class="form-select">
+            <option selected>Todos os tipos</option>
+            
+            <option>Apartamento</option>
+            <option>Área privativa</option>
+            <option>Casa</option>
+            <option>Chácara</option>
+            <option>Cobertura</option>
+            <option>Fazenda</option>
+            <option>Flat</option>    
+            <option>Galpão</option>
+            <option>Hotel/Motel</option>
+            <option>Loja</option>
+            <option>Sala</option> 
+            <option>Sítio</option>        
+            <option>Terreno/Lote</option>
+            
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label" style="color: white; font-weight: 500;">O que você precisa?</label>
+          <select id="inputState" class="form-select">
+            <option selected>Comprar</option>
+            <option>Alugar</option>
+          </select>
+        </div>
+      
+        <div class="col-12">
+          <button type="submit" onmouseover="this.style.color='#6e6d6d'" onmouseout="this.style.color='#000000'" style="background-color: #e7e7e7; color: #000000; border-color: white;" class="btn btn-primary" >Pesquisar</button>
+        </div>
+      </form>
+  </div>
+
+    <!-- GALERIA DE FOTOS COM ALGUNS DESTAQUES -->
+
+  <h3 style="margin-top: 10px; margin-bottom: 10xp; padding-left: 10px; ">IMÓVEIS EM DESTAQUE</h3>
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="width: 30%; margin-left: auto; margin-right: auto; margin-bottom: 10px; ">
+    <div style="float: left;">
+      teste
+
+    </div>
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="Imagens/casa-a-venda-em-balneario-camboriu2.jpg" class="d-block w-100" alt="..." >
+      </div>
+      <div class="carousel-item">
+        <img src="Imagens/1978411399.jpg" class="d-block w-100" alt="..." >
+      </div>
+      <div class="carousel-item" > 
+        <img src="Imagens/FACHADA-2-600x450.jpg" class="d-block w-100" alt="..." >
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+   <!-- ALGUNS APARTAMENTOS DESTACADOS -->
+
+  <div style="background-color: #e7e7e7; padding-bottom: 10px; padding-left: 10px;">
+
+      <h3>Apartamentos para comprar ou alugar</h3>
+      <!--
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="#">Active</a>
+              <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="Imagens/349059923_202443448_g.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Cidade Nova, Belo Horizonte</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                      <a class="btn btn-primary" href="#" role="button">Ver mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="Imagens/350475639_211679654_g.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Avenida Rouxinol, Moema</h5>
+                      <p class="card-text">This is a short card.</p>
+                      <a class="btn btn-primary" href="#" role="button">Ver mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="Imagens/1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bela Vista, Campo dos Goytacazes</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content.</p>
+                      <a class="btn btn-primary" href="#" role="button">Ver mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="Imagens/2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Araras, Chapecó</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                      <a class="btn btn-primary" href="#" role="button">Ver mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="Imagens/3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">União, Belo Horizonte</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                      <a class="btn btn-primary" href="#" role="button">Ver mais</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="Imagens/4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Pampulha, Belo Horizonte</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                      <a class="btn btn-primary" href="#" role="button">Ver mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      -->
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/349059923_202443448_g.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Cidade Nova, Belo Horizonte</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a class="btn btn-primary" href="manutencao.html" role="button" onmouseover="this.style.backgroundColor='#002fff'" onmouseout="this.style.backgroundColor='#5271ff'" style="background-color: #5271ff; border-color: #5271ff; font-weight: 500;">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/350475639_211679654_g.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Avenida Rouxinol, Moema</h5>
+              <p class="card-text">This is a short card.</p>
+              <a class="btn btn-primary" href="manutencao.html" role="button" onmouseover="this.style.backgroundColor='#002fff'" onmouseout="this.style.backgroundColor='#5271ff'" style="border-color: #5271ff; font-weight: 500; background-color: #5271ff;">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bela Vista, Campo dos Goytacazes</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <a class="btn btn-primary" href="manutencao.html" role="button" onmouseover="this.style.backgroundColor='#002fff'" onmouseout="this.style.backgroundColor='#5271ff'" style="border-color: #5271ff; font-weight: 500; background-color: #5271ff;">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Araras, Chapecó</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a class="btn btn-primary" href="manutencao.html" role="button" onmouseover="this.style.backgroundColor='#002fff'" onmouseout="this.style.backgroundColor='#5271ff'" style="border-color: #5271ff; font-weight: 500; background-color: #5271ff;">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">União, Belo Horizonte</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a class="btn btn-primary" href="manutencao.html" role="button" onmouseover="this.style.backgroundColor='#002fff'" onmouseout="this.style.backgroundColor='#5271ff'" style="border-color: #5271ff; font-weight: 500; background-color: #5271ff;">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="Imagens/4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Pampulha, Belo Horizonte</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a class="btn btn-primary" href="manutencao.html" role="button" onmouseover="this.style.backgroundColor='#002fff'" onmouseout="this.style.backgroundColor='#5271ff'" style="border-color: #5271ff; font-weight: 500; background-color: #5271ff;">Ver mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <h3>Últimos Imóveis</h3>
+      <h3>Apartamentos para comprar ou alugar</h3>
+      <h3>Apartamentos para comprar ou alugar</h3>
+
+
+
+      <!--Conteúdo antes do rodapé-->
+      <section class="pre-footer" style="background-color: #5271ff; margin-top: 10px;">
+    
+        <div class="pree-footer">
+          <ul class="list-unstyled">
+            <li class="sobre">
+              <h4>Sobre a Pinheiro Imóveis</h4>
+              <div class="media-body1">
+                <a class="mt-0 mb-1" href="quem_somos.html" style="color: white;">Quem Somos</a>
+              </div>
+            
+              <div class="media-body1">
+                <a class="mt-0 mb-1" href="parceiro.html" style="color: white;">Seja um Parceiro</a>
+              </div>
+              <div class="media-body1">
+                <a class="mt-0 mb-1" href="manutencao.html" style="color: white;">Trabalhe Conosco</a>
+              </div>
+              <div class="media-body1">
+                <a class="mt-0 mb-1" href="manutencao.html" style="color: white;">Política de Privacidade e Cookies</a>
+              </div>
+              <div class="media-body1">
+                <a class="mt-0 mb-1" href="manutencao.html" style="color: white;">Mapa do site</a>
+              </div>
+            </li>
+            <li class="imoveis">
+              <h4>Imóveis</h4>
+              <div class="media-body2">
+                <a class="mt-0 mb-1" href="manutencao.html" style="color: white;">Imóveis à venda</a>
+              </div>
+              <div class="media-body2">
+                <a class="mt-0 mb-1" href="manutencao.html" style="color: white;">Imóveis para alugar</a>
+              </div>
+              <div class="media-body2">
+                <a class="mt-0 mb-1" href="manutencao.html" style="color: white;">Anunciar imóvel</a>
+              </div>
+            </li>
+
+            <li class="contatos">
+              <h4>Contatos</h4>
+              <div class="media-body2">
+                <a class="mt-0 mb-1" href="manutencao.html" style="color: white;">Fale Conosco</a>
+              </div>
+              
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+
+      <footer class="footer">
+        <!--Rodapé-->
+        © 2021 Pinheiro Imóveis - Todos os direitos reservados
+      
+      
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+      <script>
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#5271ff",
+              "text": "#ffffff"
+            },
+            "button": {
+              "background": "#ffffff",
+              "text": "#5271ff"
+            }
+          },
+          "theme": "classic",
+          "content": {
+            "message": "Ao acessar o nosso site, você concorda com o uso de cookies para analisar e produzir conteúdo e anúncios adaptados aos seus interesses. Caso tenha dúvidas, leia nossa",
+            "dismiss": "Entendi!",
+            "link": "Política de Privacidade e Cookies",
+            "href": "https://projetosbreno.infinityfreeapp.com/Resenhas%20Magal/Site_Resenha/index.html"
+          }
+        });
+      </script>
+
+
+</body>
+
+</html>
