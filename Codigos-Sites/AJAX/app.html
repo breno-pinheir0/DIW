@@ -7,6 +7,14 @@
     <title>Cliente de API</title>
 </head>
 <body>
-    
+    <script>
+        fetch('https://api.github.com/users/breno-pinheir0')//retorna um objeto (promise)
+            .then(res => res.json())
+            .then(data => console.log(data)) //o primeiro then retorna a resposta do fetch e o segundo retorna a resposta do primeiro fetch
+
+
+
+
+    </script>
 </body>
 </html>
