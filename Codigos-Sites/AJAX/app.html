@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cliente de API</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <div id="tela">
+
+    </div>
     <script>
+        /* 1 Forma de puxar os dados da API:
         fetch('https://api.github.com/users/breno-pinheir0')//retorna um objeto (promise)
             .then(res => res.json())
-            .then(data => console.log(data)) //o primeiro then retorna a resposta do fetch e o segundo retorna a resposta do primeiro fetch
-
-
+            //.then(data => console.log(data)) //o primeiro then retorna a resposta do fetch e o segundo retorna a resposta do primeiro fetch
+            .then(data => document.getElementById('tela').innerHTML = data.bio)
+            // .then(data => console.log(data.bio))  Imprime apenas o que está na bio
+        */
+        /* 2 Forma */
+        $.ajax({
+            url: 'https://api.github.com/users/breno-pinheir0',
+            success: function (data) {
+                console.log('Biografia: ' + data.bio)
+            }
+        })
 
 
     </script>
 </body>
+
 </html>
