@@ -17,7 +17,9 @@ body, ul, li, p
      
 }
 
-
+.checked {
+    color: orange;
+  }
 
 .pre-footer{
      
@@ -41,7 +43,7 @@ body, ul, li, p
     font-weight: bolder;
     color: white;
     padding: 20px;
-    background: #2aa7fa;
+    background: #136CB3;
    position: absolute;  
 }
             
