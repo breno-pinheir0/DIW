@@ -46,7 +46,7 @@ img{
     background-color: #727272;
     display: flex;
     flex-wrap: wrap;/*Quebra a Linha quando não há espaço*/
-    justify-content: space-between;/*criando espaço entre os componentes do header*/
+    justify-content: space-between;/*criando espaço entre os componentes do footer*/
     align-items: center;
     padding: 20px;
     color: white;
