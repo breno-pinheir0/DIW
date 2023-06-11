@@ -21,17 +21,7 @@ body, ul, li, p
     color: orange;
   }
 
-.pre-footer{
-     
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); /* dividimos as imagens do grid em colunas com linhas na horizontal e vertical */
-    grid-gap: 20px; /* espaço ed 20px entre os ícones do grid */
-    max-width: 800px; /* largura máxima de 800 px entre os itens */
-    margin: 0 auto; /* margem automática */
-    padding: 10px;
-    
 
-}
 
 
 
