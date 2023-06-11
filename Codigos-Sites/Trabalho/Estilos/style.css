@@ -1,0 +1,71 @@
+
+
+
+html
+{
+    height: 100%; 
+}
+
+/* CSS Cabeçalho - Início */
+
+body, ul, li, p 
+{ 
+    
+    margin: 0px;
+    padding: 0px; 
+    font-size: 1rem; 
+     
+}
+
+
+
+.pre-footer{
+     
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); /* dividimos as imagens do grid em colunas com linhas na horizontal e vertical */
+    grid-gap: 20px; /* espaço ed 20px entre os ícones do grid */
+    max-width: 800px; /* largura máxima de 800 px entre os itens */
+    margin: 0 auto; /* margem automática */
+    padding: 10px;
+    
+
+}
+
+
+
+
+/***FOOTER***/
+            
+ .footer{ 
+    max-width: 100%;
+    font-weight: bolder;
+    color: white;
+    padding: 20px;
+    background: #2aa7fa;
+   position: absolute;  
+}
+            
+.copy{
+       align-content: center;
+}
+            
+.logo_footer{
+    position:absolute; 
+    top: 20px;; 
+    right:20px;
+}
+            
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+
+
+
+
+
