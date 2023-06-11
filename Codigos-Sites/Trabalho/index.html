@@ -33,7 +33,9 @@
           </a>
         </div>
         <div class="col-6">
-          Seja bem vindo convidado(a)!
+          Nome: Breno Pinheiro de Oliveira <br>
+          Curso: Ciência da Computação <br>
+          Matrícula: 689733
         </div>
         <div class="col">
           <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
@@ -118,14 +120,10 @@
           </div>
           <div class="col-md-6">
             <label for="inputState" class="form-label" style="color: white; font-weight: 500;">Qual tipo?</label>
-            <select id="inputState" class="form-select">
+            <select id="filtroTipo" class="form-select">
               <option selected>Todos os tipos</option>
 
               <option>PS4</option>
-              <option>PS5</option>
-              <option>Xbox Series</option>
-              <option>Xbox One</option>
-              <option>Nintendo Switch</option>
               <option>PC</option>
 
 
@@ -133,18 +131,13 @@
           </div>
           <div class="col-md-4">
             <label for="inputState" class="form-label" style="color: white; font-weight: 500;">Categoria</label>
-            <select id="inputState" class="form-select">
+            <select id="filtroCategoria" class="form-select">
               <option selected>Monitores</option>
               <option>SSD</option>
               <option>HD</option>
             </select>
           </div>
 
-          <div class="col-12">
-            <button type="submit" onmouseover="this.style.color='#6e6d6d'" onmouseout="this.style.color='#000000'"
-              style="background-color: #e7e7e7; color: #000000; border-color: white;"
-              class="btn btn-primary">Pesquisar</button>
-          </div>
         </form>
       </div>
     </div>
@@ -189,108 +182,6 @@
 
   <div id="tela" class="row row-cols-2 row-cols-md-w g-4" style="padding-top: 20px;">
     
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"> <img src="img/God_of_War_Ragnarök_cover.jpg" style="width: 50%;" alt="">
-            <p><span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span> (87)
-            </p>
-            <p><strong>R$109,99</strong></p>
-            <p>God Of War Ragnarok - Do Santa Monica Studio, esta é a sequência da aclamada versão de 2018 de God of
-              War.
-
-              Junte-se a Kratos e Atreus em uma jornada mítica à procura de respostas na iminência do Ragnarök. Juntos,
-              pai e filho arriscarão tudo viajando por cada um dos Nove Reinos.
-
-              Explorando paisagens mitológicas de tirar o fôlego, eles enfrentarão deuses nórdicos, feras selvagens e
-              outros inimigos aterradores enquanto se preparam para o maior confronto de suas vidas.</p>
-          </li>
-          <li class="list-group-item"><img src="img/streetfighter6.jpg" style="width: 50%;" alt="">
-            <p><span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span> (32)
-            </p>
-            <p><strong>R$129,99</strong></p>
-            <p>Street Fighter 6 -Aí vem o novo desafiante da Capcom! Street Fighter™ 6 será lançado no mundo inteiro em
-              2 de junho de 2023 e representa a próxima evolução da série.
-
-              Com o poder do RE ENGINE próprio da Capcom, a experiência de Street Fighter 6 se expande por três modos de
-              jogo distintos, apresentando: World Tour, Fighting Ground e Battle Hub.</p>
-          </li>
-
-        </ul>
-        <div class="card-footer">
-          <button class="btn btn-primary" style="background-color: #136CB3; border-color: #136CB3; margin-top: 20px;"
-            onmouseover="this.style.backgroundColor='#144566'" onmouseout="this.style.backgroundColor='#136CB3'">Ver
-            mais</button>
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item"> <img src="img/fifa23.jpg" style="width: 50%;" alt="">
-            <p><span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span> (23)
-            </p>
-            <p><strong>R$89,99</strong></p>
-            <p>FIFA 23 - O EA SPORTS™ FIFA 23 proporciona ainda mais ação e realismo do futebol aos campos do Jogo de
-              Todo Mundo com avanços na tecnologia HyperMotion2 no PlayStation®5, que agora tem o dobro de capturas de
-              movimentos do mundo real, criando animações de futebol mais reais do que nunca.</p>
-          </li>
-          <li class="list-group-item"><img src="img/CallofDuty.jpg" style="width: 50%;" alt="">
-            <p><span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span> (57)
-            </p>
-            <p><strong>R$89,99</strong></p>
-            <p>Call of Duty Cold War - Black Ops Cold War, a sequência direta de Call of Duty®: Black Ops, mergulha os
-              fãs nas profundezas da volátil batalha geopolítica da Guerra Fria no início dos anos 80. Nada é o que
-              parece em uma emocionante Campanha para um jogador, em que os jogadores ficarão frente a frente com
-              figuras históricas e verdades inconvenientes em batalhas ao redor do mundo, passando por locais
-              emblemáticos como Berlim Oriental, Vietnã, Turquia, a sede da KGB soviética e muito mais.</p>
-          </li>
-
-        </ul>
-        <div class="card-footer">
-          <button class="btn btn-primary" style="background-color: #136CB3; border-color: #136CB3; margin-top: 20px;"
-            onmouseover="this.style.backgroundColor='#144566'" onmouseout="this.style.backgroundColor='#136CB3'">Ver
-            mais</button>
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="col">
-      <div class="card" style="width: 18rem;">
-        <ul class="list-group list-group-flush">
-          
-          <li class="list-group-item">
-            <h4>Newsletter</h4>
-            <label class="text-info" >Digite seu melhor e-mail:</label>
-            <input type="text" name="password" id="password" class="form-control" style="background-color: #cfcfcf;">
-          </li>
-
-        </ul>
-        <div class="card-footer">
-          <button class="btn btn-primary" style="background-color: #136CB3; border-color: #136CB3; margin-top: 20px;"
-            onmouseover="this.style.backgroundColor='#144566'" onmouseout="this.style.backgroundColor='#136CB3'">Inscrever</button>
-        </div>
-      </div>
-    </div>
   </div>
 
 
@@ -384,6 +275,25 @@
     });
   </script>
 
+<script>
+  document.body.onload = () => {
+
+    let filtroCategoria = document.querySelector('#filtroCategoria')
+              filtroCategoria.addEventListener ('change', ()=> {
+                FILTRO_CATEGORIA = filtroCategoria.value
+                exibeProdutos()
+            })
+
+            let filtroTipo = document.querySelector('#filtroTipo')
+            filtroTipo.addEventListener ('change', ()=> {
+                FILTRO_TIPO = filtroTipo.value
+                exibeProdutos()
+            })
+
+      
+      exibeProdutos();
+  }        
+</script>
 
 </body>
 

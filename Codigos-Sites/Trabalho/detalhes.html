@@ -95,5 +95,41 @@
           </div>
         </div>
       </header>
+
+      <div id="tela">
+        <div class="card col-md-4">
+            <img src="https://source.unsplash.com/random/200x200?1" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="exibe_pet.html" class="btn btn-primary">Mais detalhes</a>
+            </div>
+        </div>
+    </div>
+
+      <script src="script.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(location.search);
+        let idProduto = parseInt(urlParams.get('id'))
+        exibeProduto (idProduto)
+
+        function previewFile() {
+            const preview = document.querySelector('img');
+            const file = document.querySelector('input[type=file]').files[0];
+            const reader = new FileReader();
+
+            reader.addEventListener("load", () => {
+                // convert image file to base64 string
+                preview.src = reader.result;
+                alterarImagem (idProduto, reader.result)
+            }, false);
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }        
+
+    </script>
 </body>
 </html>
