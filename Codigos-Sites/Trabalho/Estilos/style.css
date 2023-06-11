@@ -26,16 +26,11 @@
 
 
 
-
-@media screen and (max-width: 600px){
-
-    #pesquisa_rapida{
-        display: none;
-    }
-
+@media screen and (max-width:600px){
     .header{
-        display: none;
+        visibility: hidden;
     }
+
 }
 
 
