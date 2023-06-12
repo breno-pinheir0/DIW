@@ -58,16 +58,9 @@ const dbMock = {
         }
     ],
 
-    tipo: [
-        { id: 1, descricao: 'PS4' },
-        { id: 2, descricao: 'PC' },
-
-    ]
-
 
 }
 
-let FILTRO_TIPO = 0
 let FILTRO_CATEGORIA = ""
 
 let db = JSON.parse (localStorage.getItem('dbProdutos'))
@@ -93,22 +86,25 @@ function exibeProdutos () {
         let str = ''
         for (let i = 0; i < data.length; i++) {
             let produto = data[i]
+            let product = db.produtos[i]
+            if (((FILTRO_CATEGORIA == "") || product.categoria == FILTRO_CATEGORIA)) {
             str += `<div class="card" style="width: 25rem;">
-         <img src="${produto.image}" class="card-img-top" alt="..." style="margin-top: 10px; width: 50%">
-       <div class="card-body">
-       <h5 class="card-title">${produto.title}</h5>
-           <p class="card-text">${produto.description}</p>
-            <p><span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span> (20)
-            </p>
-            <p>De <s>R$1699,99</s> por R$${produto.price},00 </p>
-            <a href="detalhes.html?id=${produto.id}" target="_blank" class="btn btn-primary">Veja mais</a>
+                <img src="${produto.image}" class="card-img-top" alt="..." style="margin-top: 10px; width: 50%">
+                <div class="card-body">
+                    <h5 class="card-title">${produto.title}</h5>
+                    <p class="card-text">${produto.description}</p>
+                    <p><span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span> (20)
+                    </p>
+                    <p>De <s>R$1699,99</s> por R$${produto.price},00 </p>
+                    <a href="detalhes.html?id=${produto.id}" class="btn btn-primary">Veja mais</a>
 
-        </div>
-    </div>`
+                </div>
+             </div>`
+            }
 
         }
         document.getElementById('tela').innerHTML = str

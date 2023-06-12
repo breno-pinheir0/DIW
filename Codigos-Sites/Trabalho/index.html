@@ -32,7 +32,7 @@
             <img src="img/Logo letras coloridas.png" alt="" style="width: 50%;">
           </a>
         </div>
-        <div class="col-6">
+        <div class="col-6" style="margin-top: 10px;">
           Nome: Breno Pinheiro de Oliveira <br>
           Curso: Ciência da Computação <br>
           Matrícula: 689733
@@ -80,7 +80,7 @@
           </nav>
         </div>
       </div>
-      <div class="row">
+      <div class="row" style="margin-bottom: 10px;">
 
         <div class="col">
           <form class="d-flex">
@@ -118,24 +118,17 @@
           <div class="col-md-5" style="color: white; font-weight: 500;">
             Pesquisa Rápida - Encontre seu Produto
           </div>
-          <div class="col-md-6">
-            <label for="inputState" class="form-label" style="color: white; font-weight: 500;">Qual tipo?</label>
-            <select id="filtroTipo" class="form-select">
-              <option selected>Todos os tipos</option>
 
-              <option>PS4</option>
-              <option>PC</option>
-
-
-            </select>
-          </div>
           <div class="col-md-4">
-            <label for="inputState" class="form-label" style="color: white; font-weight: 500;">Categoria</label>
-            <select id="filtroCategoria" class="form-select">
-              <option selected>Monitores</option>
-              <option>SSD</option>
-              <option>HD</option>
-            </select>
+            <form class="d-flex">
+              <label for="inputState" class="form-label" style="color: white; font-weight: 500;">Categoria</label>
+              <select id="filtroCategoria" class="form-select me-2" name="categoria" id="categoria">
+                <option selected value="">Selecione uma opção</option>
+                <option value="Monitores">Monitores</option>
+                <option value="SSD">SSD</option>
+                <option value="HD">HD</option>
+              </select>
+            </form>
           </div>
 
         </form>
@@ -270,7 +263,7 @@
         "message": "Ao acessar o nosso site, você concorda com o uso de cookies para analisar e produzir conteúdo e anúncios adaptados aos seus interesses. Caso tenha dúvidas, leia nossa",
         "dismiss": "Entendi!",
         "link": "Política de Privacidade e Cookies",
-        "href": "https://projetosbreno.infinityfreeapp.com/Resenhas%20Magal/Site_Resenha/index.html"
+        "href": "#"
       }
     });
   </script>
@@ -281,12 +274,6 @@
     let filtroCategoria = document.querySelector('#filtroCategoria')
               filtroCategoria.addEventListener ('change', ()=> {
                 FILTRO_CATEGORIA = filtroCategoria.value
-                exibeProdutos()
-            })
-
-            let filtroTipo = document.querySelector('#filtroTipo')
-            filtroTipo.addEventListener ('change', ()=> {
-                FILTRO_TIPO = filtroTipo.value
                 exibeProdutos()
             })
 
